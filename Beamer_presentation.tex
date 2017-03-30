@@ -1,0 +1,57 @@
+\documentclass[14pt,a4paper]{beamer}
+
+% THEME AND FORMATTING
+\usetheme{metropolis}
+\usepackage{MonashBlue}
+
+% META INFO
+\title{Slide template}
+\author{Rob J Hyndman}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Intro}
+
+\begin{frame}[fragile]{Slide with bullets}
+
+\begin{itemize}
+  \item Bullet 1
+  \item Bullet 2
+  \item Bullet 3
+\end{itemize}
+
+
+Use \verb|\alert| to \alert{highlight} some text
+
+\begin{block}{A title block}
+Just an example
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Slide with mathematics}
+
+  Quantile Score for observation $y$.   For $0<p<1$:
+  \begin{block}{}
+    \[
+      S(y_t,q_t(p)) = \left\{
+      \begin{array}{rl}
+      p(y_t-q_t(p)) & \text{if $y_t \ge q_t(p)$}\\
+      (1-p)(q_t(p)-y_t) & \text{if $y_t < q_t(p)$}
+      \end{array}\right.
+    \]
+  \end{block}
+ 
+ Average score over all percentiles gives the best distribution forecast:
+    \[
+    QS = \frac{1}{99T}\sum_{p=1}^{99}\sum_{t=1}^T S(q_t(p),y_t)
+    \]
+ 
+\end{frame}
+
+\end{document}
