@@ -1,4 +1,5 @@
-##MonashBlue beamer slides template
+MonashBlue beamer slides template
+=============
 
 Template for generating Beamer slides for use by staff and students of the Monash Business School.
 
