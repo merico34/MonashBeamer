@@ -1,7 +1,5 @@
-#Monash Blue Beamer slides template
+#MonashBlue beamer slides template
 
-This template works with either LaTeX directly, or RMarkdown, to generate slides using Beamer.
+Template for generating Beamer slides for use by staff and students of the Monash Business School.
 
-Designed for use by staff and students of the Monash Business School.
-
-
+Use *either* Beamer_presentation.Rmd or Beamer_presentation.tex. You do not need both.
